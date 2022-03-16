@@ -28,6 +28,7 @@ stream = p.open(format=pyaudio.paInt16, channels=1, rate=16000, input=True, fram
 stream.start_stream()
 
 # Loop do reconhecimento de fala
+print('Já Pode Falar')
 while True:
     data = stream.read(2048)
     if len(data) == 0:
