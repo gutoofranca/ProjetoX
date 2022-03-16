@@ -43,11 +43,14 @@ while True:
             
             print(text)
             
-            if text == 'que horas são' or text == 'me diga as horas':
+            if 'horas' in text or 'hora' in text :
                 speak(SystemInfo.get_time())
                 
-            elif text == 'que dia é hoje':
+            elif 'dia' in text or 'data' in text or 'hoje' in text :
                 speak(SystemInfo.get_day())
-                
+            
+            elif text == 'ana descansar' or text == 'descansar':
+               speak('Até a próxima, Mestre!')
+               exit()
             else:
                 speak('Não entendi, pode repetir?')

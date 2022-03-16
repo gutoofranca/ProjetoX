@@ -13,7 +13,29 @@ class SystemInfo:
     @staticmethod
     def get_day():
         now = datetime.datetime.now()
-        if now.month == 3:
+        if now.month == 1:
+            mes = 'janeiro'
+        elif now.month == 2:
+            mes = 'fevereiro'
+        elif now.month == 3:
             mes = 'março'
+        elif now.month == 4:
+            mes = 'abril'
+        elif now.month == 5:
+            mes = 'maio'
+        elif now.month == 6:
+            mes = 'junho'
+        elif now.month == 7:
+            mes = 'julho'
+        elif now.month == 8:
+            mes = 'agosto'  
+        elif now.month == 9:
+            mes = 'setembro' 
+        elif now.month == 10:
+            mes = 'outubro' 
+        elif now.month == 11:
+            mes = 'novembro' 
+        elif now.month == 12:
+            mes = 'dezembro'                       
         answer = f'Hoje é dia {now.day} de {mes} de {now.year}.'
         return answer
